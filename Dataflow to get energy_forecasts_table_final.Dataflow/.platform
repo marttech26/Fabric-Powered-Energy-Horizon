@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Dataflow",
+    "displayName": "Dataflow to get energy_forecasts_table_final"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "320f6422-7687-bbce-4894-d323f86b66e7"
+  }
+}

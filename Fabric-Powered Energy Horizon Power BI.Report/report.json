@@ -1,0 +1,99 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.63\",\"type\":2}},\"activeSectionIndex\":0,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "adb59b5d586f8ddd6d9e",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"4fa2ec50fcd7cadbae5f\",\"layouts\":[{\"id\":0,\"position\":{\"x\":652.4127230411171,\"y\":80.4344453064391,\"z\":1,\"width\":520.3413498836308,\"height\":304.8564778898371,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"card\",\"projections\":{\"Values\":[{\"queryRef\":\"Sum(energy_forecasts.Forecast)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"energy_forecasts\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Forecast\"}},\"Function\":1},\"Name\":\"Sum(energy_forecasts.Forecast)\",\"NativeReferenceName\":\"Average of Forecast\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Forecast\"}},\"Function\":1}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"vcObjects\":{\"title\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Avg. Projected Energy (TWh)'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 304.86,
+          "width": 520.34,
+          "x": 652.41,
+          "y": 80.43,
+          "z": 1.00
+        },
+        {
+          "config": "{\"name\":\"927267d2014101c3d3db\",\"layouts\":[{\"id\":0,\"position\":{\"x\":57.59503491078355,\"y\":55.60899922420481,\"z\":0,\"width\":520.3413498836308,\"height\":304.8564778898371,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"energy_forecasts.EnergyType\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(energy_forecasts.Forecast)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"energy_forecasts\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EnergyType\"},\"Name\":\"energy_forecasts.EnergyType\",\"NativeReferenceName\":\"EnergyType\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Forecast\"}},\"Function\":0},\"Name\":\"Sum(energy_forecasts.Forecast)\",\"NativeReferenceName\":\"Sum of Forecast\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Forecast\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"labelStyle\":{\"expr\":{\"Literal\":{\"Value\":\"'Percent of total'\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 304.86,
+          "width": 520.34,
+          "x": 57.60,
+          "y": 55.61,
+          "z": 0.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{\"objects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":-0.3}}}}},\"transparency\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "e1a17bc5616c0de9fa0b",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"2f918d2a4567af9919fb\",\"layouts\":[{\"id\":0,\"position\":{\"x\":68.51823118696663,\"y\":13.902249806051202,\"z\":3,\"width\":395.2211016291699,\"height\":62.56012412723041,\"tabOrder\":3}}],\"singleVisual\":{\"visualType\":\"textbox\",\"drillFilterOtherVisuals\":true,\"objects\":{\"general\":[{\"properties\":{\"paragraphs\":[{\"textRuns\":[{\"value\":\"Fabric-Powered Energy Horizon\",\"textStyle\":{\"fontWeight\":\"bold\",\"fontSize\":\"18pt\"}}]}]}}]},\"vcObjects\":{\"background\":[{\"properties\":{\"color\":{\"solid\":{\"color\":{\"expr\":{\"ThemeDataColor\":{\"ColorId\":0,\"Percent\":0}}}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}],\"dropShadow\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 62.56,
+          "width": 395.22,
+          "x": 68.52,
+          "y": 13.90,
+          "z": 3.00
+        },
+        {
+          "config": "{\"name\":\"6b7ad6e03097f4177c71\",\"layouts\":[{\"id\":0,\"position\":{\"x\":68.51823118696663,\"y\":105.25989138867338,\"z\":0,\"width\":285.989138867339,\"height\":92.35065942591156,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"energy_forecasts.Entity\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"energy_forecasts\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Entity\"},\"Name\":\"energy_forecasts.Entity\",\"NativeReferenceName\":\"Entity\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"energy_forecasts\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Entity\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Kenya'\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Country'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 92.35,
+          "width": 285.99,
+          "x": 68.52,
+          "y": 105.26,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"7aa19e15392adaad58d6\",\"layouts\":[{\"id\":0,\"position\":{\"x\":68.51823118696663,\"y\":235.34522885958106,\"z\":2,\"width\":998.9759503491078,\"height\":429.9767261442979,\"tabOrder\":2}}],\"singleVisual\":{\"visualType\":\"lineChart\",\"projections\":{\"Series\":[{\"queryRef\":\"energy_forecasts.EnergyType\"}],\"Y\":[{\"queryRef\":\"Sum(energy_forecasts.Forecast)\"}],\"Category\":[{\"queryRef\":\"energy_forecasts.Year\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"energy_forecasts\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EnergyType\"},\"Name\":\"energy_forecasts.EnergyType\",\"NativeReferenceName\":\"EnergyType\"},{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Forecast\"}},\"Function\":0},\"Name\":\"Sum(energy_forecasts.Forecast)\",\"NativeReferenceName\":\"Forecast\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Year\"},\"Name\":\"energy_forecasts.Year\",\"NativeReferenceName\":\"Year\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Forecast\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true,\"objects\":{\"labels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}],\"seriesLabels\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}],\"zoom\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]},\"vcObjects\":{\"title\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Energy Forecast by Year and EnergyType'\"}}}}}],\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"15D\"}}}}}]}}}",
+          "filters": "[{\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"energy_forecasts\"}},\"Property\":\"Year\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"energy_forecasts\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Comparison\":{\"ComparisonKind\":1,\"Left\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"Year\"}},\"Right\":{\"Literal\":{\"Value\":\"2023L\"}}}}}]},\"type\":\"Advanced\",\"howCreated\":0,\"isHiddenInViewMode\":false}]",
+          "height": 429.98,
+          "width": 998.98,
+          "x": 68.52,
+          "y": 235.35,
+          "z": 2.00
+        },
+        {
+          "config": "{\"name\":\"9f29ee0f2f6a2d2f2f62\",\"layouts\":[{\"id\":0,\"position\":{\"x\":482.60667183863455,\"y\":105.25989138867338,\"z\":1,\"width\":387.2769588828549,\"height\":92.35065942591156,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"energy_forecasts.EnergyType\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"energy_forecasts\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EnergyType\"},\"Name\":\"energy_forecasts.EnergyType\",\"NativeReferenceName\":\"EnergyType\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"e\",\"Entity\":\"energy_forecasts\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"e\"}},\"Property\":\"EnergyType\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Electricity_from_Non_Renewables_TWh'\"}}]]}}}]}}}}],\"header\":[{\"properties\":{\"text\":{\"expr\":{\"Literal\":{\"Value\":\"'Energy Type'\"}}}}}]},\"vcObjects\":{\"border\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"radius\":{\"expr\":{\"Literal\":{\"Value\":\"18D\"}}}}}]}}}",
+          "filters": "[]",
+          "height": 92.35,
+          "width": 387.28,
+          "x": 482.61,
+          "y": 105.26,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

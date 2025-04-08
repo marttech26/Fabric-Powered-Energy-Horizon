@@ -1,0 +1,126 @@
+{
+  "formatVersion": "202409",
+  "lastModified": null,
+  "editingSession": {
+    "computeEngineSettings": {},
+    "editingSessionMashup": {
+      "mashupName": "Dataflow to get energy_forecasts_table_final",
+      "queryGroups": [],
+      "documentLocale": "en-GB",
+      "queriesMetadata": {
+        "DefaultDestination": {
+          "queryId": "a0f6ac8e-babb-4445-a872-324358fe6d8f",
+          "queryName": "DefaultDestination",
+          "queryGroupId": null,
+          "entityName": null,
+          "lastKnownIsCalculatedEntity": null,
+          "lastKnownIsLinkedEntity": null,
+          "lastKnownIsParameter": null,
+          "isHidden": true,
+          "lastKnownResultTypeName": null,
+          "loadEnabled": false,
+          "fieldsMetadata": {},
+          "deleteExistingDataOnLoad": false,
+          "hostProperties": {},
+          "jsonOutputDestinations": null,
+          "bindToDefaultOutputDestination": null,
+          "jsonIncrementalRefreshSettings": null
+        },
+        "energy_forecasts": {
+          "queryId": "dd3b462d-932f-4b8f-8d46-b026b5b25182",
+          "queryName": "energy_forecasts",
+          "queryGroupId": null,
+          "entityName": null,
+          "lastKnownIsCalculatedEntity": null,
+          "lastKnownIsLinkedEntity": null,
+          "lastKnownIsParameter": null,
+          "isHidden": false,
+          "lastKnownResultTypeName": null,
+          "loadEnabled": true,
+          "fieldsMetadata": {},
+          "deleteExistingDataOnLoad": false,
+          "hostProperties": {},
+          "jsonOutputDestinations": null,
+          "bindToDefaultOutputDestination": null,
+          "jsonIncrementalRefreshSettings": null
+        },
+        "modelling": {
+          "queryId": "c52cfaad-f023-447b-ae57-6e9f29a3922f",
+          "queryName": "modelling",
+          "queryGroupId": null,
+          "entityName": null,
+          "lastKnownIsCalculatedEntity": null,
+          "lastKnownIsLinkedEntity": null,
+          "lastKnownIsParameter": null,
+          "isHidden": false,
+          "lastKnownResultTypeName": null,
+          "loadEnabled": false,
+          "fieldsMetadata": {},
+          "deleteExistingDataOnLoad": false,
+          "hostProperties": {},
+          "jsonOutputDestinations": null,
+          "bindToDefaultOutputDestination": null,
+          "jsonIncrementalRefreshSettings": null
+        },
+        "energy_forecasts_DataDestination": {
+          "queryId": "eea45db3-376c-4984-bcae-4a5a9e2ffb09",
+          "queryName": "energy_forecasts_DataDestination",
+          "queryGroupId": null,
+          "entityName": null,
+          "lastKnownIsCalculatedEntity": null,
+          "lastKnownIsLinkedEntity": null,
+          "lastKnownIsParameter": null,
+          "isHidden": true,
+          "lastKnownResultTypeName": null,
+          "loadEnabled": false,
+          "fieldsMetadata": {},
+          "deleteExistingDataOnLoad": false,
+          "hostProperties": {},
+          "jsonOutputDestinations": null,
+          "bindToDefaultOutputDestination": null,
+          "jsonIncrementalRefreshSettings": null
+        }
+      },
+      "connectionOverrides": [
+        {
+          "path": "Lakehouse",
+          "kind": "Lakehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"80263da8-0ddf-4cb3-bd8e-2f99ea797a91\",\"DatasourceId\":\"9d42d71d-1456-4a38-97da-9bfc3978f4ca\"}",
+          "credentialDetails": {},
+          "connectionParameters": {},
+          "privacyGroup": "None"
+        },
+        {
+          "path": "Warehouse",
+          "kind": "Warehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"80263da8-0ddf-4cb3-bd8e-2f99ea797a91\",\"DatasourceId\":\"22fd8f7a-16e8-4e1d-822c-3ddbf9f181bb\"}",
+          "credentialDetails": {},
+          "connectionParameters": {},
+          "privacyGroup": "None"
+        }
+      ],
+      "trustedConnections": [
+        {
+          "path": "Warehouse",
+          "kind": "Warehouse",
+          "provider": "DmtsFabric",
+          "connectionName": "{\"ClusterId\":\"80263da8-0ddf-4cb3-bd8e-2f99ea797a91\",\"DatasourceId\":\"22fd8f7a-16e8-4e1d-822c-3ddbf9f181bb\"}",
+          "credentialDetails": {},
+          "connectionParameters": {},
+          "privacyGroup": "None"
+        }
+      ],
+      "useHostConnectionProvider": false,
+      "fastCombine": false,
+      "allowNativeQueries": true,
+      "skipAutomaticTypeAndHeaderDetection": false,
+      "hostProperties": {
+        "dataflowRefreshOutputFileFormat": "Parquet",
+        "enableDateTimeFieldsForStaging": "true",
+        "enablePublishWithoutLoadedQueries": "true"
+      }
+    }
+  }
+}
