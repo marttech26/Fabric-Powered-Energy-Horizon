@@ -163,6 +163,10 @@ display(energy_df)
 # META   "language_group": "synapse_pyspark"
 # META }
 
+# MARKDOWN ********************
+
+# ##### Feature selection
+
 # CELL ********************
 
 #Creating ML-ready features
@@ -192,6 +196,10 @@ final_features.write.mode("overwrite").saveAsTable("energy_ml_features")
 # META   "language": "python",
 # META   "language_group": "synapse_pyspark"
 # META }
+
+# MARKDOWN ********************
+
+# #### Modelling
 
 # CELL ********************
 
@@ -318,6 +326,10 @@ forecast_ready = long_df.withColumn('row_num', row_number().over(window_spec)) \
 # META   "language_group": "synapse_pyspark"
 # META }
 
+# MARKDOWN ********************
+
+# ##### ARIMA Time Series ML Model
+
 # CELL ********************
 
 #import libraries
@@ -398,6 +410,11 @@ display(forecast_results.limit(20))
 # META   "language_group": "synapse_pyspark"
 # META }
 
+# MARKDOWN ********************
+
+# ##### Testing Model
+# ###### Here we tried to test if the model works using Kenya as the base country.
+
 # CELL ********************
 
 # Save forecasts to a Delta table
@@ -437,7 +454,8 @@ plt.show()
 
 # MARKDOWN ********************
 
-# For the above Ive used Kenya just as an example to test whether it works.
+# For the above I've used Kenya just as an example to test whether it works.
+# You can use whichever country you please for testing purposes.
 
 # CELL ********************
 
@@ -478,14 +496,39 @@ forecast_pd.to_csv('energy_forecasts.csv', index=False)
 
 # In this notebook, we successfully processed and prepared energy data for forecasting using PySpark and ARIMA. After transforming the dataset into a long format, we ensured each energy type had sufficient historical data points for accurate modeling. By applying an ARIMA model through a custom Pandas UDF, we were able to generate forecasts for multiple energy types, providing valuable insights into future trends. The results, including the predicted values and confidence intervals, offer a reliable foundation for decision-making and strategic planning in the energy sector.
 # 
+# ---
+# 
 # However, it’s important to note that our exploration was limited by the F2 SKU capacity, which constrained the depth of our analysis and the scalability of the model. Despite these limitations, the methodology used in this notebook demonstrates the potential of combining big data processing with statistical modeling to tackle complex forecasting challenges.
 
-# CELL ********************
+# MARKDOWN ********************
 
+# #### Recommendations
 
-# METADATA ********************
+# MARKDOWN ********************
 
-# META {
-# META   "language": "python",
-# META   "language_group": "synapse_pyspark"
-# META }
+# ##### Strategic Investments
+# Leverage insights from our ARIMA-based predictive modeling to guide targeted investments in renewable energy, particularly in developing regions. Prioritize areas showing strong growth trajectories in wind and solar power generation.
+# 
+# ##### Diversification Strategies
+# Encourage a balanced mix of renewable sources—wind, solar, hydro, and others—by utilizing the predictive engine to determine the most effective combinations per region. This approach increases grid resilience and energy security.
+# 
+# ##### Data-Driven Transition Policies
+# Enable governments and regulators to craft energy transition policies that are backed by predictive insights. Policies can then be tailored to support the most promising energy types in each region, ensuring impactful incentives and resource allocations.
+# 
+# ---
+# 
+# #### Next Steps
+# 
+# ##### Model Enhancement and Validation
+# Iteratively improve the ARIMA models by experimenting with advanced time-series techniques and incorporating external factors such as climate data or economic indicators. This will help boost forecasting accuracy and applicability.
+# 
+# ##### Temporal Expansion
+# Extend model training beyond the current one-year forecast horizon. Once we upgrade from the F2 capacity trial, we aim to scale the model to handle longer forecast periods (e.g., 10 to 15 years), unlocking deeper planning insights.
+# 
+# ##### Regional Sensitivity Analysis
+# Perform region-specific analysis to capture unique energy profiles, environmental conditions, and infrastructural limitations. This ensures localized recommendations that address real-world constraints and opportunities in each country.
+# 
+# ---
+# 
+# > ⚠️ **Note**: While the results are promising, our ability to scale forecasting was limited by the F2 capacity tier in Microsoft Fabric. Unlocking more powerful SKUs would significantly improve model performance and forecasting range.
+

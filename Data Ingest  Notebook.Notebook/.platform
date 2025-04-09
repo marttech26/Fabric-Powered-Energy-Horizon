@@ -1,11 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
   "metadata": {
-    "type": "Report",
-    "displayName": "Fabric-Powered Energy Horizon Power BI"
+    "type": "Notebook",
+    "displayName": "Data Ingest  Notebook",
+    "description": "New notebook"
   },
   "config": {
     "version": "2.0",
-    "logicalId": "2e3f50fd-393e-9195-426f-589233aa16a6"
+    "logicalId": "42b36a68-c1e9-b1bb-40c0-76871cda9653"
   }
 }

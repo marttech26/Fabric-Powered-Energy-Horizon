@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Fabric-Powered Energy Horizon Power_BI"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "b6f9fb80-ce88-9515-4d46-0ac7748aa937"
+  }
+}
