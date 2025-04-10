@@ -1,5 +1,7 @@
 # **Fabric Powered Energy Horizon**
 
+![Power plants](power_plants_background.jpg)
+
 ## **Overview**
 
 The **Fabric Powered Energy Horizon** project leverages the power of Microsoft Fabric and advanced statistical modeling to predict the future trends in energy production. This project specifically focuses on forecasting renewable and non-renewable electricity generation based on historical data. By utilizing a robust ARIMA time series forecasting model, we aim to provide actionable insights into the evolution of energy production over the next coming years.
