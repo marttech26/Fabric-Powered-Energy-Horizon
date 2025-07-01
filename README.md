@@ -1,4 +1,4 @@
-# **Fabric Powered Energy Horizon**
+# **Fabric Powered Energy-Horizon**
 
 ![Power plants](power_plants_background.jpg)
 
